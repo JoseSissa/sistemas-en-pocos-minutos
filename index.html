@@ -249,6 +249,12 @@
             line-height: 1.6;
         }
 
+        @media (max-width: 991px) {
+            .welcome-section {
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -276,7 +282,12 @@
     <div class="content">
         <!-- Sección de bienvenida -->
         <div class="welcome-section" data-aos="fade-up">
-            <img src="/Imagenes/imagenindex.jpg" alt="Bienvenido">
+            <!-- <img src="/Imagenes/imagenindex.jpg" alt="Bienvenido"> -->
+            <video autoplay muted loop style="width: 100%; max-width: 540px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); animation: fadeIn 1.5s ease-in-out;">
+                <source src="videos/video.webm" type="video/webm">
+                <source src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="welcome-text">
                 <h1>¡Bienvenidos!</h1>
                 <p>¡Bienvenidos a Sistemas en Pocos Minutos, una página de tecnología! Nos enfocamos en hacer que el mantenimiento preventivo del software sea comprensible para todos. Acompáñanos en este viaje para aprender a mantener tu tecnología en su mejor estado.</p>
